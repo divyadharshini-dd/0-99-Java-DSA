@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class HCF_LCM {
+    public static void main(String[] args) {
+        int hcf, lcm;
+        Scanner in = new Scanner (System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int temp1 = a;
+        int temp2 = b;
+        while (temp2 != 0)
+        {
+            int temp = temp2;
+            temp2 = (temp1%temp2);
+            temp1=temp;
+        }
+        hcf = temp1;
+        lcm = (a*b)/hcf;
+        System.out.println(hcf);
+        System.out.println(lcm);
+    }
+}
