@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class rs_usd {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        double rs = in.nextInt();
+            rs = (rs * 0.012);
+            double usd = rs;
+        System.out.println(usd);
+    }
+}
