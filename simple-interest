@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class SimpleInterest {
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+        double principle = in.nextDouble();
+        double rate = in.nextDouble();
+        double time = in.nextDouble();
+        double SI = (principle*rate*time) / 100;
+        System.out.println(SI);
+    }
+}
