@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Fibo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int prev = 0;
+        int current = 1;
+        while (prev <= n)
+        {
+            System.out.println(prev + " ");
+            int next = prev + current;
+            prev = current;
+            current = next;
+        }
+    }
+}
