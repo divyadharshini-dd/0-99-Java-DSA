@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class area {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        double r = in.nextDouble();
+        System.out.println(arm(r));
+    }
+    public static double arm (double r) {
+        return Math.PI*r*r;
+    }
+}
